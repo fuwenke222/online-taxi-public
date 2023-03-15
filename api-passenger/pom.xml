@@ -22,6 +22,18 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
+        <!--spring-cloud-starter-alibaba-nacos-config 服务注册-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2021.1</version>
+        </dependency>
+        <!--spring-cloud-starter-alibaba-nacos-discovery 服务发现-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>2021.1</version>
+        </dependency>
     </dependencies>
 
 </project>
