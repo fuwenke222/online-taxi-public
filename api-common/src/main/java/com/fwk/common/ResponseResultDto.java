@@ -20,6 +20,11 @@ public class ResponseResultDto<T> {
     private String message;
     private T data;
 
+    public static ResponseResultDto success(){
+        return new ResponseResultDto().setCode(CommonStatusEnum.SUCCESS.getCode()).
+                setMessage(CommonStatusEnum.SUCCESS.getValue());
+    }
+
     /**
      * 成功响应的方法
      * @param data
