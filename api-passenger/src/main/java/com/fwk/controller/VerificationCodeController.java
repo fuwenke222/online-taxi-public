@@ -1,7 +1,9 @@
 package com.fwk.controller;
 
 
+import com.fwk.common.ResponseResultDto;
 import com.fwk.common.VerificationCodeDto;
+import com.fwk.common.response.NumberCodeResponse;
 import com.fwk.service.VerificationCodeService;
 import net.sf.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,7 @@ public class VerificationCodeController {
     private VerificationCodeService verificationCodeService;
 
     @GetMapping("/verification-code")
-    public String verificationCode(@RequestBody VerificationCodeDto verificationCodeDto) throws JSONException {
+    public ResponseResultDto<NumberCodeResponse> verificationCode(@RequestBody VerificationCodeDto verificationCodeDto) throws JSONException {
         String passengerPhone = verificationCodeDto.getPassengerPhone();
         System.out.println("接收到的手机号参数："+passengerPhone);
         return verificationCodeService.getVerificationCode(passengerPhone);

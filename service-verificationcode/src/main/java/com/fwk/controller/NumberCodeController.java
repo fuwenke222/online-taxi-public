@@ -26,7 +26,7 @@ public class NumberCodeController {
         double mathRandom = (Math.random()*9+1)*(Math.pow(10,size-1));
         int resultInt = (int)mathRandom;
         NumberCodeResponse numberCodeResponse = new NumberCodeResponse(resultInt);
-
+        System.out.println("numberCodeResponse = " + numberCodeResponse);
         return ResponseResultDto.success(numberCodeResponse);
     }
 
