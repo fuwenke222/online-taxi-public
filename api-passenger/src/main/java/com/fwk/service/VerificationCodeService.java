@@ -1,8 +1,8 @@
 package com.fwk.service;
 
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import net.sf.json.JSONException;
+import net.sf.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 /**
@@ -24,7 +24,9 @@ public class VerificationCodeService {
 
         //返回值
         JSONObject result = new JSONObject();
-        result.put("code","1").put("message","success").put("data","verification");
+        result.put("code",1);
+        result.put("message","success");
+        result.put("data","verification");
         return result.toString();
     }
 

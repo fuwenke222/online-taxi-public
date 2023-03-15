@@ -1,8 +1,9 @@
 package com.fwk.controller;
 
-import com.fwk.request.VerificationCodeDto;
+
+import com.fwk.common.VerificationCodeDto;
 import com.fwk.service.VerificationCodeService;
-import org.json.JSONException;
+import net.sf.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
